@@ -8,6 +8,7 @@
 import Foundation
 
 public final class DemoSwiftyLib {
+//    public init() {}
     public func addToArray(array: [Float]) -> [Float] {
         var resultArray: [Float] = Array(repeating: 0, count: array.count)
         DemoSwiftyLibObjC().add(toArray: array, count: array.count, output: &resultArray)
