@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.platform     = :ios
-  spec.ios.deployment_target = '9.0'
+  spec.ios.deployment_target = '12.0'
   spec.name         = "DemoSwiftyLib"
   spec.version      = "0.0.1"
   spec.summary      = "DemoSwiftyLib lets user increase each value in array by 2."
@@ -27,6 +27,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  DemoSwiftyLib takes in a float array and modifies each element of the array to increment it by 2 and returns the result array.
                    DESC
 
   spec.homepage     = "https://github.com/IshaBansal/DemoSwiftyLib"
@@ -92,7 +93,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "DemoSwiftyLib/**/*.{swift}"
+  spec.source_files  = "DemoSwiftyLib/**/*.{swift,h,mm,hpp,cpp}"
   spec.swift_version = "4.2"
 
   # spec.public_header_files = "Classes/**/*.h"

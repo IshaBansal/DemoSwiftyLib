@@ -5,9 +5,8 @@
 //  Created by Isha Personal on 20/03/23.
 //
 
-#import <Foundation/Foundation.h>
+#include "DemoSwiftyLibCpp.h"
 #import "DemoSwiftyLibObjC.h"
-#import "DemoSwiftyLibCpp.hpp"
 
 @implementation DemoSwiftyLibObjC
 
