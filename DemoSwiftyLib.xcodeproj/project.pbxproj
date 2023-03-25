@@ -12,10 +12,8 @@
 		507580BD29C8381600E5B8D6 /* DemoSwiftyLibTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507580BC29C8381600E5B8D6 /* DemoSwiftyLibTests.swift */; };
 		507580BE29C8381600E5B8D6 /* DemoSwiftyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 507580B029C8381500E5B8D6 /* DemoSwiftyLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		507580C829C8416400E5B8D6 /* DemoSwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507580C729C8416400E5B8D6 /* DemoSwiftyLib.swift */; };
-		507580CB29C842B500E5B8D6 /* DemoSwiftyLibCpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 507580C929C842B500E5B8D6 /* DemoSwiftyLibCpp.cpp */; };
-		507580CC29C842B500E5B8D6 /* DemoSwiftyLibCpp.h in Headers */ = {isa = PBXBuildFile; fileRef = 507580CA29C842B500E5B8D6 /* DemoSwiftyLibCpp.h */; };
-		507580CF29C8472900E5B8D6 /* DemoSwiftyLibObjC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 507580CE29C8472900E5B8D6 /* DemoSwiftyLibObjC.mm */; };
-		507580D529C85DF400E5B8D6 /* DemoSwiftyLibObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 507580CD29C8466C00E5B8D6 /* DemoSwiftyLibObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50FB436029CEF79700B146A5 /* DemoSwiftyLibC.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FB435E29CEF79700B146A5 /* DemoSwiftyLibC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50FB436129CEF79700B146A5 /* DemoSwiftyLibC.c in Sources */ = {isa = PBXBuildFile; fileRef = 50FB435F29CEF79700B146A5 /* DemoSwiftyLibC.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +33,8 @@
 		507580B729C8381600E5B8D6 /* DemoSwiftyLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoSwiftyLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		507580BC29C8381600E5B8D6 /* DemoSwiftyLibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSwiftyLibTests.swift; sourceTree = "<group>"; };
 		507580C729C8416400E5B8D6 /* DemoSwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSwiftyLib.swift; sourceTree = "<group>"; };
-		507580C929C842B500E5B8D6 /* DemoSwiftyLibCpp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DemoSwiftyLibCpp.cpp; sourceTree = "<group>"; };
-		507580CA29C842B500E5B8D6 /* DemoSwiftyLibCpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSwiftyLibCpp.h; sourceTree = "<group>"; };
-		507580CD29C8466C00E5B8D6 /* DemoSwiftyLibObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSwiftyLibObjC.h; sourceTree = "<group>"; };
-		507580CE29C8472900E5B8D6 /* DemoSwiftyLibObjC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoSwiftyLibObjC.mm; sourceTree = "<group>"; };
+		50FB435E29CEF79700B146A5 /* DemoSwiftyLibC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoSwiftyLibC.h; sourceTree = "<group>"; };
+		50FB435F29CEF79700B146A5 /* DemoSwiftyLibC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DemoSwiftyLibC.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +77,11 @@
 		507580AF29C8381500E5B8D6 /* DemoSwiftyLib */ = {
 			isa = PBXGroup;
 			children = (
-				507580C929C842B500E5B8D6 /* DemoSwiftyLibCpp.cpp */,
-				507580CA29C842B500E5B8D6 /* DemoSwiftyLibCpp.h */,
 				507580B029C8381500E5B8D6 /* DemoSwiftyLib.h */,
 				507580B129C8381500E5B8D6 /* DemoSwiftyLib.docc */,
 				507580C729C8416400E5B8D6 /* DemoSwiftyLib.swift */,
-				507580CD29C8466C00E5B8D6 /* DemoSwiftyLibObjC.h */,
-				507580CE29C8472900E5B8D6 /* DemoSwiftyLibObjC.mm */,
+				50FB435E29CEF79700B146A5 /* DemoSwiftyLibC.h */,
+				50FB435F29CEF79700B146A5 /* DemoSwiftyLibC.c */,
 			);
 			path = DemoSwiftyLib;
 			sourceTree = "<group>";
@@ -107,9 +101,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				507580D529C85DF400E5B8D6 /* DemoSwiftyLibObjC.h in Headers */,
 				507580BE29C8381600E5B8D6 /* DemoSwiftyLib.h in Headers */,
-				507580CC29C842B500E5B8D6 /* DemoSwiftyLibCpp.h in Headers */,
+				50FB436029CEF79700B146A5 /* DemoSwiftyLibC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,10 +205,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				507580CB29C842B500E5B8D6 /* DemoSwiftyLibCpp.cpp in Sources */,
 				507580C829C8416400E5B8D6 /* DemoSwiftyLib.swift in Sources */,
-				507580CF29C8472900E5B8D6 /* DemoSwiftyLibObjC.mm in Sources */,
 				507580B229C8381500E5B8D6 /* DemoSwiftyLib.docc in Sources */,
+				50FB436129CEF79700B146A5 /* DemoSwiftyLibC.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,17 @@
 import Foundation
 
 public final class DemoSwiftyLib {
-//    public init() {}
     public func addToArray(array: [Float]) -> [Float] {
-        var resultArray: [Float] = Array(repeating: 0, count: array.count)
-        DemoSwiftyLibObjC().add(toArray: array, count: array.count, output: &resultArray)
+        let cArray = UnsafeMutablePointer<Float>.allocate(capacity: array.count)
+        defer {
+            cArray.deallocate()
+        }
+        for i in 0..<array.count {
+            cArray[i] = array[i]
+        }
         
-        return resultArray
+        modifyArray(cArray, Int32(array.count))
+        let arrayBuffer = UnsafeMutableBufferPointer(start: cArray, count: array.count)
+        return Array(arrayBuffer)
     }
 }

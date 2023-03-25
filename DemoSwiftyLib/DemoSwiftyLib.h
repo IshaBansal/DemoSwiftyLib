@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <DemoSwiftyLib/DemoSwiftyLibObjC.h>
+#include <DemoSwiftyLib/DemoSwiftyLibC.h>
 
 //! Project version number for DemoSwiftyLib.
 FOUNDATION_EXPORT double DemoSwiftyLibVersionNumber;
