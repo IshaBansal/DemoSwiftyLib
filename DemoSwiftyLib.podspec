@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios
   spec.ios.deployment_target = '12.0'
   spec.name         = "DemoSwiftyLib"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "DemoSwiftyLib lets user increase each value in array by 2."
 
   # This description is used to generate tags and improve search results.
